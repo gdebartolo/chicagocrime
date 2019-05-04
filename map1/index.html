@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coordinated Multivariate Visualization</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Leaflet -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"> -->
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
+  <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+
+  <!-- D3.js -->
+  <link rel="stylesheet" href="css/d3.parcoords.css">
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="js/d3.parcoords.js"></script>
+  <script src="js/colorbrewer.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-default">
+  <div class="container container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://gdebartolo.github.io/chicagocrime/"">Gia's Portfolio</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav">
+
+
+      </ul>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<div style="height:0px;" id="info-label" class="col-md-6 portfolio-item"></div>
+
+<!-- Page Content -->
+<div class="container">
+
+<!-- Page Header -->
+
+<div class="panel panel-default">
+<div class="panel-body">
+	<div class="row panel-header">
+		<div class="col-lg-12">
+			<h1 class="page-header">Social Infrastructure and Crime in Chicago
+		</div>
+	</div>
+	<div class="row">
+	  <div class="col-lg-9">
+		<p>The following map examines spatial trends of social infrastructure and crime in Chicago communities. The factors that can be explored are: violent crimes per 10,000 people (vcrimes_pt), libraries per 10,000 people (lib_ptt), parks per 10,000 people (parks_ptt), grocery stores per 10,000 people (groc_ptt), worship centers per 10,000 people (worship_pt), and daycare centers per 10,000 people (elc_ptt)   .
+
+    <ul>
+
+    </ul>
+
+
+	  </div>
+	  <div class="col-lg-2">
+        <div class="row">
+		        <div id="legend"></div>
+            <br><br>
+            <div>
+              <p>In case GitHub Pages incorrectly displays the map, click below!</p>
+              <form method="get" action="data/lab7-larson.zip">
+              <button type="submit">Download .zip</button>
+              </form>
+            </div>
+	  </div>
+
+	</div>
+	  <!-- /.row -->
+
+	  <!-- /.row -->
+	  <!-- Projects Row -->
+	  <div class="row">
+		<div class="col-lg-12">
+		  <div class="col-md-12 portfolio-item">
+			<div id="map"/>
+		  </div>
+		</div>
+	  </div>
+	  <!-- /.row -->
+
+    <br style="margin-top:10px;">
+
+	  <!-- Projects Row -->
+	  <div class="row">
+		<div class="col-lg-12 portfolio-item">
+		  <div class="col-md-12 portfolio-item">
+			<div id="pcp" class="parcoords"/>
+		  </div>
+		</div>
+	  </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <p><b>Changes:</b> Mouseover now highlights the parallel coordinate plot! Some minor formatting tweaks otherwise.</p>
+      </div>
+    </div>
+
+</div>
+</div>
+</div><!-- /.container -->
+
+<hr>
+<br>
+
+<!-- Footer -->
+  <footer>
+	<div class="row">
+	  <div class="col-lg-12 text-center">
+		<p>Copyright &copy; Gia DeBartolo 2019</p>
+	  </div>
+	</div>
+	<!-- /.row -->
+  </footer>
+
+<!-- jQuery -->
+<script src="../vendor/jquery/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!--link to main JavaScript file-->
+<script src="js/main2.js"></script>
+
+  </body>
+
+  </html>

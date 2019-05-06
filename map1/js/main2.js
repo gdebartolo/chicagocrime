@@ -109,7 +109,7 @@ d3.json("data/chicago-final.geojson", function(error, jsonData) {
     //add a select element for the dropdown menu
     var dropdown = d3.select("#legend")
     .append("div")
-    .html("<h4>Select Age Group: </h4>")
+    .html("<h4>Select Variable: </h4>")
     .append("select")
     .on("change", function(){ changeAttribute(this.value, jsonData) }); //changes expressed attribute
 
